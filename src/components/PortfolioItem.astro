@@ -1,0 +1,23 @@
+---
+import type { CollectionEntry } from "astro:content";
+import Card from "./Card.astro";
+
+interface Props {
+    item: CollectionEntry<"portfolio">;
+}
+
+const { data } = Astro.props.item;
+---
+
+<Card link={data.path}>
+    <h1 class="text-center text-gray-400 uppercase font-bold">{data.type}</h1>
+
+    <img src={data.path} alt={data.name} width={160} height={190} />
+    <div class="text-center">
+        <h1 class="font-medium">{data.name}</h1>
+
+        <h2 class="font-semibold">{data.place}</h2>
+        <h3>{data.level}</h3>
+        <p>{data.year}</p>
+    </div>
+</Card>

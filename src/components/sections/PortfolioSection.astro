@@ -1,0 +1,13 @@
+---
+import { getCollection } from "astro:content";
+import PortfolioItem from "../PortfolioItem.astro";
+
+const portfolio = await getCollection("portfolio");
+---
+
+<section id="portfolio" class="my-8 p-default">
+    <h1 class="section-title">Портфолио</h1>
+    <div class="flex flex-wrap justify-center gap-12">
+        {portfolio.map((it) => <PortfolioItem item={it} />)}
+    </div>
+</section>

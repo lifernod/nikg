@@ -1,0 +1,31 @@
+---
+import Card from "../Card.astro";
+
+const h1Class = "mt-2";
+---
+
+<section id="contacts" class="my-10 p-default">
+    <h1 class="section-title">Контакты</h1>
+
+    <div class="flex justify-center gap-8">
+        <Card link="https://t.me/lifernod">
+            <img
+                src="/telegram.svg"
+                alt="telegram"
+                loading="lazy"
+                width={64}
+                height={64}
+            />
+
+            <h1 class={h1Class}>telegram</h1>
+            <h2>@lifernod</h2>
+        </Card>
+
+        <Card link="https://vk.me/lifernod">
+            <img src="/vk.svg" alt="vk" loading="lazy" width={64} height={64} />
+
+            <h1 class={h1Class}>vk</h1>
+            <h2>@lifernod</h2>
+        </Card>
+    </div>
+</section>

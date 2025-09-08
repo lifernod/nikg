@@ -1,0 +1,21 @@
+@import "tailwindcss";
+
+@theme {
+    --font-roboto-serif: "Roboto Serif", serif;
+
+    --color-primary: #FAA008;
+}
+
+@utility p-default {
+    padding: 0px 50px;
+}
+
+@utility section-title {
+    @apply text-2xl font-semibold text-center mb-8 font-roboto-serif;
+}
+
+
+a:hover {
+    color: var(--color-primary);
+    transition: color 400ms;
+}

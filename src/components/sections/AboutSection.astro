@@ -1,0 +1,53 @@
+---
+const h1Class = "text-lg text-center font-semibold uppercase mb-2";
+const ulClass = "text-center";
+---
+
+<section id="about" class="p-default mt-10 w-full bg-white py-12">
+    <h1 class="section-title">О себе</h1>
+
+    <p class="border-b text-center border-b-gray-200 pb-3">
+        Меня зовут Никита. Родился в Омске, а учился в небольшом посёлке
+        Сосновка, что находится в Белоярском районе ХМАО. Учился отлично,
+        занимался спортом. <br /> Мальчик я застенчивый, не люблю шумных компаний,
+        есть проблемки в общении и знакомствах, но надеюсь за годы учебы это исправить.
+        <br /> Сейчас я живу в городе Томске (не Омск!). Учусь на первом курсе в
+        Томском политехе по направлению Программная инженерия
+    </p>
+
+    <!-- Увлечения -->
+    <div class="flex items-start justify-between mt-8">
+        <div>
+            <h1 class={h1Class}>Спорт</h1>
+            <ul class={ulClass}>
+                <li>Волейбол</li>
+                <li>Настольный теннис</li>
+            </ul>
+        </div>
+
+        <div>
+            <h1 class={h1Class}>Литература</h1>
+            <ul class={ulClass}>
+                <li>Собачье сердце - М. А. Булгаков</li>
+            </ul>
+        </div>
+
+        <div>
+            <h1 class={h1Class}>Музыка</h1>
+            <ul class={ulClass}>
+                <li>Всё хорошо - астра</li>
+                <li>Наше лето - Валентин Стрыкало</li>
+                <li>Skyfall - Adele</li>
+                <li>Hot 'n' Cold - Katy Perry</li>
+            </ul>
+        </div>
+
+        <div>
+            <h1 class={h1Class}>IT</h1>
+            <ul class={ulClass}>
+                <li>Java</li>
+                <li>Go</li>
+            </ul>
+        </div>
+    </div>
+</section>
