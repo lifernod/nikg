@@ -14,8 +14,17 @@
     @apply text-2xl font-semibold text-center mb-8 font-roboto-serif;
 }
 
-
 a:hover {
     color: var(--color-primary);
     transition: color 400ms;
+}
+
+@keyframes fade {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 100%;
+    }
 }

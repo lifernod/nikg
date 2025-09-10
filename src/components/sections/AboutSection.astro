@@ -3,7 +3,7 @@ const h1Class = "text-lg text-center font-semibold uppercase mb-2";
 const ulClass = "text-center max-sm:text-sm";
 ---
 
-<section id="about" class="p-default mt-10 w-full bg-white py-12">
+<section id="about" class="p-default mt-10 bg-white py-12">
     <h1 class="section-title">О себе</h1>
 
     <p class="border-b text-center border-b-gray-200 pb-3">
@@ -16,7 +16,9 @@ const ulClass = "text-center max-sm:text-sm";
     </p>
 
     <!-- Увлечения -->
-    <div class="flex items-start justify-between mt-8">
+    <div
+        class="sm:flex max-sm:grid max-sm:grid-cols-2 max-sm:grid-rows-2 items-start justify-between mt-8"
+    >
         <div>
             <h1 class={h1Class}>Спорт</h1>
             <ul class={ulClass}>

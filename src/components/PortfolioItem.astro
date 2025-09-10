@@ -10,7 +10,9 @@ const { data } = Astro.props.item;
 ---
 
 <Card link={data.path}>
-    <h1 class="text-center text-gray-400 uppercase font-bold">{data.type}</h1>
+    <h1 class="text-center text-gray-400 uppercase font-bold max-sm:text-sm">
+        {data.type}
+    </h1>
 
     <img
         src={data.path}
