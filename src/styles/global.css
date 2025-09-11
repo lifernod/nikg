@@ -11,7 +11,7 @@
 }
 
 @utility section-title {
-    @apply text-2xl font-semibold text-center mb-8 font-roboto-serif;
+    @apply text-2xl font-semibold text-center mb-8 font-roboto-serif h-12;
 }
 
 a:hover {

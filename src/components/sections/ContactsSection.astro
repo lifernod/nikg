@@ -1,11 +1,15 @@
 ---
 import Card from "../Card.astro";
 
+import TypingAnimation from "../TypingAnimation.svelte";
+
 const h1Class = "mt-2";
 ---
 
 <section id="contacts" class="my-10 p-default">
-    <h1 class="section-title">Контакты</h1>
+    <h1 class="section-title">
+        <TypingAnimation client:visible text="Контакты" speed="80" />
+    </h1>
 
     <div class="flex justify-center gap-8">
         <Card link="https://t.me/lifernod">

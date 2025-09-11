@@ -2,12 +2,16 @@
 import { render } from "astro:content";
 import { getCollection } from "astro:content";
 
+import TypingAnimation from "../TypingAnimation.svelte";
+
 const motivation = await getCollection("motivation");
 const { Content } = await render(motivation[0]);
 ---
 
 <section id="motivation" class="w-full py-10 p-default bg-white">
-    <h1 class="section-title">Мотивация</h1>
+    <h1 class="section-title">
+        <TypingAnimation client:visible text="Мотивация" speed="80" />
+    </h1>
 
     <Content />
 </section>

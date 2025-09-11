@@ -1,10 +1,14 @@
 ---
+import TypingAnimation from "../TypingAnimation.svelte";
+
 const h1Class = "text-lg text-center font-semibold uppercase mb-2";
 const ulClass = "text-center max-sm:text-sm";
 ---
 
 <section id="about" class="p-default mt-10 bg-white py-12">
-    <h1 class="section-title">О себе</h1>
+    <h1 class="section-title">
+        <TypingAnimation client:visible text="О себе" speed="80" />
+    </h1>
 
     <p class="border-b text-center border-b-gray-200 pb-3">
         Меня зовут Никита. Родился в Омске, а учился в небольшом посёлке

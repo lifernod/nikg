@@ -1,12 +1,15 @@
 ---
 import { getCollection } from "astro:content";
 import PortfolioItem from "../PortfolioItem.astro";
+import TypingAnimation from "../TypingAnimation.svelte";
 
 const portfolio = await getCollection("portfolio");
 ---
 
 <section id="portfolio" class="my-8 p-default">
-    <h1 class="section-title">Портфолио</h1>
+    <h1 class="section-title">
+        <TypingAnimation client:visible text="Портфолио" speed="80" />
+    </h1>
     <div
         class="sm:flex sm:flex-wrap max-sm:grid max-sm:grid-cols-2 justify-center gap-8"
     >
